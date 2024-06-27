@@ -1,12 +1,12 @@
 # Iso-Surface and Volume Rendering Application
 
-This application demonstrates iso-surface extraction and volume rendering using VTK. It supports multiple datasets and provides interactive controls for adjusting iso-values and opacity.
+This application demonstrates iso-surface extraction and volume rendering using VTK. It supports multiple datasets (5 currently) and provides interactive controls for adjusting iso-values and opacity.
 
 ## Features
 - Load and visualize volumetric datasets.
-- Switch between iso-surface extraction and volume rendering.
-- Adjust iso-values interactively using keyboard keys.
-- Adjust opacity using a slider widget.
+- Switch between **iso-surface extraction** and **volume rendering**.
+- Adjust iso-values interactively using **keyboard keys**.
+- Adjust opacity using a **slider widget**.
 - Toggle opacity slider visibility using a keyboard key.
 
 ## Datasets
@@ -14,7 +14,7 @@ This application demonstrates iso-surface extraction and volume rendering using 
 - **Foot**: Uses 256 images.
 - **Frog**: Uses 44 images.
 - **Aneurism**: Uses 256 images.
-- **Teapot**: Uses 256 images.
+- **Teapot**: Uses 178 images.
 
 ## Usage
 
@@ -41,18 +41,18 @@ This application demonstrates iso-surface extraction and volume rendering using 
 2. Place the dataset files in the appropriate folders.
 3. Run the script:
     ```
-    python PartAB.py
+    python Part1A1B.py
     ```
 
 ## Important Surfaces
-- **Head**: Skin (iso-value 500), Bone (iso-value 1150).
-- **Foot, Frog, Aneurism, Teapot**: Adjust iso-values interactively to locate interesting surfaces.
-
-## Customization
-You can customize the color and opacity transfer functions for different datasets in the script. Modify the `create_transfer_functions` function to set the desired values.
+- **Head**: Skin (iso-value 500), Bone/Skull (iso-value 1150).
+- **Foot** : Foot is visible (iso-value 10) Bone (Iso-value 100)
+- **Frog** : Frog is seen at  iso-value 40 / frog frame at iso-value 130
+- **Aneurism** : Full view of the blood vessels (iso-value 10)  Clear view of the bulge (iso value 200)
+- **Teapot** : teapot is on surface (iso-value 10) / a scorpion or crawfish is seen (iso-value 130 )
 
 ## Contributors
-- [Your Name](mailto:your.email@example.com)
+- [Adam Azhar Bin Nor Adha A21EC8010](adamazhar@graduate.utm.my)
 
 ## License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+This project is done for the Data Visualisation Group Project 2023242 
