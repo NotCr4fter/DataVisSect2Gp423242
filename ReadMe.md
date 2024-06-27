@@ -1,4 +1,4 @@
-# Iso-Surface and Volume Rendering Application
+# Iso-Surface and Volume Rendering Application (Part 1A and 1B)
 
 This application demonstrates iso-surface extraction and volume rendering using VTK. It supports multiple datasets (5 currently) and provides interactive controls for adjusting iso-values and opacity.
 
