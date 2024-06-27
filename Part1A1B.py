@@ -219,14 +219,14 @@ def toggle_slider(obj, event):
 def keypress_callback(obj, event):
     global iso_value, iso_actor, volume_actor, current_volume, head_reader, head_color_function, head_opacity_function
     key = obj.GetKeySym()
-    if key == "i":
+    if key in ["Up", "Right"]:  # Increase iso-value
         iso_value += 20
         print(f"Iso-value: {iso_value}")
         renderer.RemoveActor(iso_actor)
         iso_actor = create_isosurface_actor(head_reader, iso_value)
         renderer.AddActor(iso_actor)
         update_iso_value_text(iso_value)
-    elif key == "d":
+    elif key in ["Down", "Left"]:  # Decrease iso-value
         iso_value -= 10
         print(f"Iso-value: {iso_value}")
         renderer.RemoveActor(iso_actor)

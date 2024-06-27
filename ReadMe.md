@@ -24,8 +24,8 @@ This application demonstrates iso-surface extraction and volume rendering using 
 - **3**: Load frog dataset.
 - **4**: Load aneurism dataset.
 - **5**: Load teapot dataset.
-- **i**: Increase iso-value by 20.
-- **d**: Decrease iso-value by 10.
+- **up arrow**: Increase iso-value by 20.
+- **down arrow**: Decrease iso-value by 10.
 - **v**: Switch to volume rendering mode.
 - **s**: Switch to iso-surface extraction mode.
 - **t**: Toggle opacity slider visibility.
@@ -54,5 +54,5 @@ This application demonstrates iso-surface extraction and volume rendering using 
 ## Contributors
 - [Adam Azhar Bin Nor Adha A21EC8010](adamazhar@graduate.utm.my)
 
-## License
+## Purpose
 This project is done for the Data Visualisation Group Project 2023242 
